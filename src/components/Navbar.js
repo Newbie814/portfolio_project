@@ -1,6 +1,7 @@
 import React from 'react';
 import myLogo from '../mw-logo8.jpg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark py-0'>
@@ -17,7 +18,10 @@ const Navbar = () => {
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
-          <span className='navbar-toggler-icon'></span>
+          <FontAwesomeIcon
+            icon={faBars}
+            style={{ color: 'rgb(44, 145, 170)' }}
+          />
         </button>
 
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
